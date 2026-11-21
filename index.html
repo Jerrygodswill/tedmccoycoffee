@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6b3e26" />
+    <meta
+      name="description"
+      content="TedmcCoy Coffee Shop — freshly brewed coffee made from carefully selected beans."
+    />
+    <title>TedmcCoy Coffee Shop</title>
+
+    <link rel="icon" href="coffee-imgs/coffee-icon.png" type="image/png" />
+    <link rel="stylesheet" href="main.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+      <a class="logo" href="#home" aria-label="TedmcCoy Coffee Shop home">
+        <img src="coffee-imgs/coffee-icon.png" alt="" width="40" height="40" />
+        <span>TedmcCoy Coffee Shop</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#exploreus" class="nav-link">Explore Us</a></li>
+          <li><a href="#brands" class="nav-link">Brands</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="menu-icon"
+        id="menu-toggle"
+        type="button"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h4>Start Your Day with Coffee</h4>
+          <h1>Fresh Coffee Every Morning</h1>
+          <p>
+            Enjoy the rich aroma and taste of freshly brewed coffee made from
+            carefully selected beans.
+          </p>
+          <a href="#exploreus" class="order-btn">Explore the menu</a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="coffee-imgs/hero-beans.png"
+            alt="Roasted coffee beans"
+            width="650"
+            height="650"
+          />
+        </div>
+      </section>
+
+      <section class="coffee-menu" id="exploreus">
+        <h2 class="section-title">Explore the Coffee World</h2>
+        <p class="section-intro">Choose your favourite and place an order.</p>
+
+        <div class="coffee-items">
+          <article class="menu-item reveal">
+            <img
+              src="coffee-imgs/cappuccino.jpg"
+              alt="A cup of cappuccino"
+              width="250"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Cappuccino</h3>
+            <p>Rich and creamy coffee with a perfect balance.</p>
+            <div class="price">$8.60</div>
+            <button
+              class="order-btn"
+              type="button"
+              data-order
+              data-item="Cappuccino"
+              data-price="8.60"
+            >
+              Order now
+            </button>
+          </article>
+
+          <article class="menu-item reveal">
+            <img
+              src="coffee-imgs/mocha.jpg"
+              alt="A cup of mocha"
+              width="250"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Mocha</h3>
+            <p>Chocolate and coffee in a smooth blend.</p>
+            <div class="price">$9.20</div>
+            <button
+              class="order-btn"
+              type="button"
+              data-order
+              data-item="Mocha"
+              data-price="9.20"
+            >
+              Order now
+            </button>
+          </article>
+
+          <article class="menu-item reveal">
+            <img
+              src="coffee-imgs/latte.jpg"
+              alt="A glass of latte"
+              width="250"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Latte</h3>
+            <p>Espresso blended with smooth steamed milk.</p>
+            <div class="price">$11.40</div>
+            <button
+              class="order-btn"
+              type="button"
+              data-order
+              data-item="Latte"
+              data-price="11.40"
+            >
+              Order now
+            </button>
+          </article>
+
+          <article class="menu-item reveal">
+            <img
+              src="coffee-imgs/cold-java.jpg"
+              alt="A glass of cold brew coffee"
+              width="250"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Cold Java</h3>
+            <p>A refreshing cold-brew coffee experience.</p>
+            <div class="price">$6.40</div>
+            <button
+              class="order-btn"
+              type="button"
+              data-order
+              data-item="Cold Java"
+              data-price="6.40"
+            >
+              Order now
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="brands" id="brands">
+        <h2 class="section-title">Brands &amp; Beans We Brew With</h2>
+        <p class="section-intro">Every cup starts with beans we trust.</p>
+
+        <ul class="brand-list">
+          <li class="brand-card reveal">
+            <h3>Ethiopian Highlands</h3>
+            <p>Bright, fruity and floral notes.</p>
+          </li>
+          <li class="brand-card reveal">
+            <h3>Colombian Supremo</h3>
+            <p>Smooth, sweet and well balanced.</p>
+          </li>
+          <li class="brand-card reveal">
+            <h3>Brazilian Santos</h3>
+            <p>Nutty, chocolatey and low in acidity.</p>
+          </li>
+          <li class="brand-card reveal">
+            <h3>Kenyan AA</h3>
+            <p>Bold, juicy and full of character.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-info">
+          <h2 class="section-title left">Get in Touch</h2>
+          <p>
+            Questions, bulk orders or events? Contact us or subscribe for news
+            and offers.
+          </p>
+          <ul class="social-links">
+            <!-- Replace these with your real social profile URLs. -->
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >X</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="newsletter">
+          <h3>Subscribe to our Newsletter</h3>
+          <!-- Replace the placeholder with your own form endpoint to receive submissions. -->
+          <form
+            id="newsletter-form"
+            action="https://formspree.io/f/yourformid"
+            method="post"
+          >
+            <label for="news-name">Name</label>
+            <input
+              type="text"
+              id="news-name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+
+            <label for="news-email">Email</label>
+            <input
+              type="email"
+              id="news-email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+
+            <button type="submit" class="order-btn">Subscribe</button>
+            <p
+              class="form-status"
+              id="news-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year">2026</span> TedmcCoy Coffee Shop. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <dialog id="order-dialog" aria-labelledby="order-title">
+      <form id="order-form" novalidate>
+        <div class="dialog-head">
+          <h2 id="order-title">Your order</h2>
+          <button
+            type="button"
+            class="dialog-close"
+            aria-label="Close order form"
+            data-close
+          >
+            &times;
+          </button>
+        </div>
+
+        <p class="order-summary">
+          <strong id="order-item">Item</strong> <span id="order-unit"></span>
+        </p>
+
+        <label for="order-qty">Quantity</label>
+        <div class="qty">
+          <button type="button" data-step="-1" aria-label="Decrease quantity">
+            &minus;
+          </button>
+          <input
+            type="number"
+            id="order-qty"
+            min="1"
+            max="20"
+            value="1"
+            inputmode="numeric"
+          />
+          <button type="button" data-step="1" aria-label="Increase quantity">
+            +
+          </button>
+        </div>
+
+        <label for="order-name">Your name</label>
+        <input type="text" id="order-name" autocomplete="name" required />
+
+        <label for="order-note">Notes (optional)</label>
+        <textarea
+          id="order-note"
+          rows="3"
+          placeholder="Extra shot, less sugar, pick-up time..."
+        ></textarea>
+
+        <p class="order-total">
+          Total: <strong id="order-total">$0.00</strong>
+        </p>
+        <p
+          class="form-status"
+          id="order-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <button type="submit" class="order-btn">Send order on WhatsApp</button>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
