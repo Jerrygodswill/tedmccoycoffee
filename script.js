@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ].filter(Boolean).join("\n");
 
       // Replace with your shop's WhatsApp number, including country code.
-      const whatsappNumber = "15551234567";
+      const whatsappNumber = "+2348063714132";
       const whatsappUrl =
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
